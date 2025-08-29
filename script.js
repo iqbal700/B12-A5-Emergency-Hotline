@@ -14,35 +14,31 @@
          })
   }
 
-
-
-
   //  ==-==  Event Listener For Copy Icons ==-== // 
 
-   const copyIcon = document.getElementsByClassName('copy-icon');
+     const copyIcon = document.getElementsByClassName('copy-icon');
 
        for (const copy of copyIcon) {
        copy.addEventListener('click', function () {
-
+       
        let copyCount = parseInt(document.getElementById('copy-count').innerText);
        document.getElementById('copy-count').innerText = copyCount + 1;
 
-       // ==-== Copy number ==-==  I have done copy text with the help of AI ==-== //
+       // =-= Copy number =-=I have done copy text with the help of AI  //
 
        const card = copy.closest('.flex.flex-col'); 
        const numberElement = card.querySelector('.font-bold.text-xl');
        const numberText = numberElement.textContent.trim();
 
-       navigator.clipboard.writeText(numberText)
-       .then(() => {
-              console.log('Copied:', numberText);
-       })
-       .catch((err) => {
+      navigator.clipboard.writeText(numberText)
+        .then(function () {
+              alert('Copied number: ' + numberText); 
+            })
+       .catch(function (err) {
               console.error('Copy failed', err);
-       });
-       });
-       }
-
+        });
+        });
+        }
 
    // ==-== Event listener for call icon ==-== //
 
@@ -94,7 +90,6 @@
 
        }
 
-
        // ==-== clear history section ==-== // 
 
           const clearBtn = document.getElementById('clear-history-btn');
@@ -108,5 +103,3 @@
 
 
 
-
- 
