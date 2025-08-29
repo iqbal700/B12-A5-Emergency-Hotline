@@ -36,7 +36,27 @@
                    
                    const instituteNum = call.parentNode.parentNode.children[1].innerText;
 
-                   alert(`You are calling ${instituteName} - ${instituteNum}`)
+              alert(`You are calling ${instituteName} - ${instituteNum}`)
+
+                   
+
+       const date = new Date().toLocaleTimeString();
+       const newDiv = document.createElement('div');
+       const historyContainer = document.getElementById('history-container');
+
+                      newDiv.innerHTML = `
+
+                     <div class="cart-div flex justify-between items-center bg-gray-100 p-2 rounded-lg mt-5">
+                            <div class="px-2">
+                                   <h1>${instituteName}</h1>
+                                   <h2>${instituteNum}</h2>
+                            </div>
+                            <h1>${date}</h1>
+                            
+                     </div>
+                             
+                     `
+                     historyContainer.append(newDiv);
 
              } else {
                 alert ('sorry you dont have sufficient coin for calling')
@@ -46,6 +66,8 @@
 
 
        }
+
+
 
 
  
