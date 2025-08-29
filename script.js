@@ -68,6 +68,17 @@
        }
 
 
+       // ==-== clear history section ==-== // 
+
+          const clearBtn = document.getElementById('clear-history-btn');
+
+          clearBtn.addEventListener('click', function(){
+
+              const domElement = document.getElementById('history-container')
+               .innerHTML = '';
+          })
+
+
 
 
  
