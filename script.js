@@ -15,6 +15,35 @@
   }
 
 
+
+
+  //  ==-==  Event Listener For Copy Icons ==-== // 
+
+   const copyIcon = document.getElementsByClassName('copy-icon');
+
+       for (const copy of copyIcon) {
+       copy.addEventListener('click', function () {
+
+       let copyCount = parseInt(document.getElementById('copy-count').innerText);
+       document.getElementById('copy-count').innerText = copyCount + 1;
+
+       // ==-== Copy number ==-==  I have done copy text with the help of AI ==-== //
+
+       const card = copy.closest('.flex.flex-col'); 
+       const numberElement = card.querySelector('.font-bold.text-xl');
+       const numberText = numberElement.textContent.trim();
+
+       navigator.clipboard.writeText(numberText)
+       .then(() => {
+              console.log('Copied:', numberText);
+       })
+       .catch((err) => {
+              console.error('Copy failed', err);
+       });
+       });
+       }
+
+
    // ==-== Event listener for call icon ==-== //
 
       const callIcon = document.getElementsByClassName('call-icon');
@@ -44,26 +73,24 @@
        const newDiv = document.createElement('div');
        const historyContainer = document.getElementById('history-container');
 
-                      newDiv.innerHTML = `
+        newDiv.innerHTML = `
 
-                     <div class="cart-div flex justify-between items-center bg-gray-100 p-2 rounded-lg mt-5">
-                            <div class="px-2">
-                                   <h1>${instituteName}</h1>
-                                   <h2>${instituteNum}</h2>
-                            </div>
-                            <h1>${date}</h1>
-                            
+              <div class="cart-div flex justify-between items-center bg-gray-100 p-2 rounded-lg mt-5">
+                     <div class="px-2">
+                            <h1>${instituteName}</h1>
+                            <h2>${instituteNum}</h2>
                      </div>
-                             
-                     `
-                     historyContainer.append(newDiv);
+                     <h1>${date}</h1>
+                     
+              </div> `
+                            
+              historyContainer.append(newDiv);
 
-             } else {
-                alert ('sorry you dont have sufficient coin for calling')
-             }
-                   
-              } )
-
+       } else {
+              alert ('sorry you dont have sufficient coin for calling')
+       }
+              
+       } )
 
        }
 
@@ -77,6 +104,7 @@
               const domElement = document.getElementById('history-container')
                .innerHTML = '';
           })
+
 
 
 

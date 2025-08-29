@@ -20,38 +20,41 @@
         <div class="left-side">
             <img src="assets/logo.png" alt="logo">
         </div>
-        <div class="right-side flex items-center gap-4">
+        <div class="right-side flex items-center gap-1 md:gap-4">
             <div class=" flex gap-1 items-center justify-center bg-[#F5FFF6] w-[90px] rounded-3xl text-center p-2  ">
-                  <h1 id="heart-count" class="text-xl">0</h1>
+                  <h1 id="heart-count" class=" text-xs md:text-xl">0</h1>
                   <img src="assets/heart.png" alt="pic" class="w-[1.5rem] inline ml-2">
             </div>
             <div  class=" flex bg-[#F5FFF6] w-[90px] rounded-3xl text-center p-2">
             <h1 id="coin-count">100</h1>
-            <img src="assets/coin.png" alt="pic" class="w-[1.5rem] inline ml-2">
+            <img src="assets/coin.png" alt="pic" class=" w-[1.3rem] md:w-[1.5rem] inline ml-2">
             </div>
-          
-            
-            <h1 class="bg-[#00A63E] w-[90px] p-2 rounded-3xl text-center text-white "> 0  <span class="ml-2">Copy</span></h1>
+
+            <div  class=" flex bg-[#00A63E] w-[75px] md:w-[90px] rounded-3xl justify-center p-2 text-white">
+                <h1 id="copy-count">0</h1>
+                <h2 class=" ml-2  textx">Copy</h2>         
+            </div>
+           
         </div>
     </section>
 
     <!-- ==-== hero section starts here ==-== -->
 
-    <section class="max-h-[240px] bg-green-700   ">
+    <section class=" md:max-h-[240px] bg-green-700   ">
         <div class="flex flex-col items-center justify-center p-4 gap-2 bg-gradient-to-l from-[#006747] to-[#014631] ">
             <img class="w-[7rem]" src="assets/logo-dark.png" alt="logo">
-            <h1 class="text-white font-bold text-2xl">Emergency Service Directory</h1>
-            <p class="text-white font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h1 class="text-white text-center font-bold text-2xl">Emergency Service Directory</h1>
+            <p class="text-white text-center font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </section>
 
     <!-- ==-== main section starts here ==-==  -->
 
-    <section class=" flex  gap-2 bg-[#F5FFF6] max-h-[1140px] p-8">
+    <section class=" flex flex-col-reverse md:flex-row gap-2 bg-[#F5FFF6] h-full md:max-h-[1140px] p-8">
 
-        <div class="left-side content-start w-2/3 grid grid-cols-3 gap-3">
+        <div class="left-side content-start w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-3">
 
-            <div class="card max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
+            <div class="card md:max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
                 <div class="flex justify-between items-center">
                     <img class="w-[3rem] bg-[#FFE3E2] p-2 rounded-lg" src="assets/emergency.png" alt="pic">
                     <i class="heart-icon fa-regular fa-heart"></i>
@@ -64,14 +67,14 @@
                         <p class="font-bold text-xl">999</p>
                         <p class="bg-[#D4D6D5] px-1 opacity-40 w-10 text-center rounded-lg" >All</p>
                     <div class="flex gap-2 mt-3 justify-between">
-                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer copy-icon"><i class="fa-regular fa-copy"></i> copy</button>
                         <button class="call-icon w-[9rem] text-white border-1 border-[#D4D6D5] bg-[#00A63E] rounded-lg p-1"> <i class="fa-solid fa-phone cursor-pointer"></i> call </button>
                     </div>
                 </div>
                
             </div>
 
-            <div class="card max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
+            <div class="card md:max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
                 <div class="flex justify-between items-center">
                     <img class="w-[3rem] bg-[#FFE3E2] p-2 rounded-lg" src="assets/police.png" alt="pic">
                     <i class="heart-icon fa-regular fa-heart"></i>
@@ -84,14 +87,14 @@
                         <p class="font-bold text-xl">999</p>
                         <p class="bg-[#D4D6D5] px-1 opacity-40 w-15 text-center rounded-lg" >police</p>
                     <div class="flex gap-2 mt-3 justify-between">
-                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer copy-icon"><i class="fa-regular fa-copy"></i> copy</button>
                         <button class="call-icon w-[9rem] text-white border-1 border-[#D4D6D5] bg-[#00A63E] rounded-lg p-1"> <i class="fa-solid fa-phone cursor-pointer"></i> call </button>
                     </div>
                 </div>
                
             </div>
 
-            <div class="card max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
+            <div class="card md:max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
                 <div class="flex justify-between items-center">
                     <img class="w-[3rem] bg-[#FFE3E2] p-2 rounded-lg" src="assets/fire-service.png" alt="pic">
                     <i class="heart-icon fa-regular fa-heart"></i>
@@ -104,14 +107,14 @@
                         <p class="font-bold text-xl">999</p>
                         <p class="bg-[#D4D6D5] px-1 opacity-40 w-17 text-center rounded-lg" >fire</p>
                     <div class="flex gap-2 mt-3 justify-between">
-                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer copy-icon"><i class="fa-regular fa-copy"></i> copy</button>
                         <button class="call-icon w-[9rem] text-white border-1 border-[#D4D6D5] bg-[#00A63E] rounded-lg p-1"> <i class="fa-solid fa-phone cursor-pointer"></i> call </button>
                     </div>
                 </div>
                
             </div>
 
-            <div class="card max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
+            <div class="card md:max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
                 <div class="flex justify-between items-center">
                     <img class="w-[3rem] bg-[#FFE3E2] p-2 rounded-lg" src="assets/ambulance.png" alt="pic">
                     <i class="heart-icon fa-regular fa-heart"></i>
@@ -124,14 +127,14 @@
                         <p class="font-bold text-xl">1994-999999</p>
                         <p class="bg-[#D4D6D5] px-1 opacity-40 w-17 text-center rounded-lg" >Health</p>
                     <div class="flex gap-2 mt-3 justify-between">
-                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer copy-icon"><i class="fa-regular fa-copy"></i> copy</button>
                         <button class="call-icon w-[9rem] text-white border-1 border-[#D4D6D5] bg-[#00A63E] rounded-lg p-1"> <i class="fa-solid fa-phone cursor-pointer"></i> call </button>
                     </div>
                 </div>
                
             </div>
 
-            <div class="card max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
+            <div class="card md:max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
                 <div class="flex justify-between items-center">
                     <img class="w-[3rem] bg-[#FFE3E2] p-2 rounded-lg" src="assets/emergency.png" alt="pic">
                     <i class="heart-icon fa-regular fa-heart"></i>
@@ -144,14 +147,14 @@
                         <p class="font-bold text-xl">109</p>
                         <p class="bg-[#D4D6D5] px-1 opacity-40 w-17 text-center rounded-lg" >Help</p>
                     <div class="flex gap-2 mt-3 justify-between">
-                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer copy-icon"><i class="fa-regular fa-copy"></i> copy</button>
                         <button class="call-icon w-[9rem] text-white border-1 border-[#D4D6D5] bg-[#00A63E] rounded-lg p-1"> <i class="fa-solid fa-phone cursor-pointer"></i> call </button>
                     </div>
                 </div>
                
             </div>
 
-            <div class="card max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
+            <div class="card md:max-w-[350px] min-h-[255px] bg-white shadow-[0_2px_10px_rgba(0,0,0,0.05)] p-6 rounded-3xl">
                 <div class="flex justify-between items-center">
                     <img class="w-[3rem] bg-[#FFE3E2] p-2 rounded-lg" src="assets/emergency.png" alt="pic">
                     <i class="heart-icon fa-regular fa-heart"></i>
@@ -164,7 +167,7 @@
                         <p class="font-bold text-xl">106</p>
                         <p class="bg-[#D4D6D5] px-1 opacity-40 w-15 text-center rounded-lg" >govt</p>
                     <div class="flex gap-2 mt-3 justify-between">
-                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="w-[9rem] border-1 p-1 border-[#D4D6D5] rounded-lg cursor-pointer 'copy-icon"><i class="fa-regular fa-copy"></i> copy</button>
                         <button class="call-icon w-[9rem] text-white border-1 border-[#D4D6D5] bg-[#00A63E] rounded-lg p-1"> <i class="fa-solid fa-phone cursor-pointer"></i> call </button>
                     </div>
                 </div>
@@ -175,7 +178,7 @@
 
         <!--  History Section  -->
 
-        <div class="right-side w-1/3 bg-white max-h-[565px] rounded-xl p-4 " >
+        <div class="right-side w-full md:w-1/3 bg-white max-h-[565px] rounded-xl p-4 " >
 
             <div class="flex justify-between items-center ">
                 <h1 class="font-semibold text-xl"><i class="fa-regular fa-clock text-xl"></i> Call History </h1>
